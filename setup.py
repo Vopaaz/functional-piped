@@ -9,7 +9,7 @@ setup(
     author="Vopaaz",
     author_email="liyifan945@gmail.com",
     url="https://github.com/Vopaaz/functional-piped",
-    description="Write iterator.map(func) instead of map(func, iterator)",
+    description="Write s(iterator).map(func) instead of map(func, iterator)",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
