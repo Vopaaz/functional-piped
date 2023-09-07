@@ -10,8 +10,10 @@ def doctest_helper():
     >>> s([1, 2, 3]).map(lambda x: x + 1).to(set)
     {2, 3, 4}
 
-    >>> # [1, 2, 3]  ->    [2, 3, 4]        ->          [2, 4]           ->        2 + 4 = 6
-    >>> s([1, 2, 3]).map(lambda x: x + 1).filter(lambda x: x % 2 == 0).reduce(lambda x, y: x + y)
+    >>> (s([1, 2, 3])
+    ...     .map(lambda x: x + 1)            # [2, 3, 4]
+    ...     .filter(lambda x: x % 2 == 0)    # [2, 4]
+    ...     .reduce(lambda x, y: x + y))     # 2 + 4 = 6
     6
 
     >>> s([1, 2, 3]).foreach(print)

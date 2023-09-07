@@ -10,7 +10,6 @@ For example,
     .map(func0)
     .filter(func1)
     .to(list))
-`
 ```
 
 makes much more sense than
@@ -48,8 +47,11 @@ If the result is still an iterable, you can use `.to()` to collect it into any d
 >>> s([1, 2, 3]).map(lambda x: x + 1).to(set)
 {2, 3, 4}
 
->>> s([1, 2, 3]).map(lambda x: x + 1).filter(lambda x: x % 2 == 0).reduce(lambda x, y: x + y)
-6 #   [1, 2, 3]    ->   [2, 3, 4]        ->    [2, 4]         -> 2 + 4 = 6
+>>> (s([1, 2, 3])
+...     .map(lambda x: x + 1)            # [2, 3, 4]
+...     .filter(lambda x: x % 2 == 0)    # [2, 4]
+...     .reduce(lambda x, y: x + y))     # 2 + 4 = 6
+6
 
 >>> s([1, 2, 3]).foreach(print)
 1
