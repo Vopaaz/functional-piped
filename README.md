@@ -1,5 +1,10 @@
 # functional-piped
 
+![Codecov](https://img.shields.io/codecov/c/github/Vopaaz/functional-piped?style=for-the-badge&token=gOatZaMQ9U)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/functional-piped?style=for-the-badge&)
+![PyPI](https://img.shields.io/pypi/v/functional-piped?style=for-the-badge&)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Vopaaz/functional-piped/CI-master.yml?branch=master&style=for-the-badge)
+
 Python has native support for some functional programming functions such as `map` and `filter`.
 This library allows you to use them in a "piped" way,
 i.e. `s(iterable).map(func)` instead of `map(func, iterable)`,
