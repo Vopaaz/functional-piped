@@ -1,0 +1,15 @@
+# Setup tools
+setuptools==68.2.0
+
+# Unit tests
+pytest==7.4.1
+pytest-cov==4.1.0
+coverage==7.3.1
+
+# Formatting
+black==23.7.0
+
+# Documentation
+pdoc==14.0.0
+mkdocs==1.5.2
+mkdocs-material==9.2.8
