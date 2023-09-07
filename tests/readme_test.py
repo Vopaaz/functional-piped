@@ -1,6 +1,6 @@
 def doctest_helper():
     """
-    >>> from dotmap import Stream as s
+    >>> from funcpipe import Stream as s
     >>> s([1, 2, 3]).map(lambda x: x + 1).to(list)
     [2, 3, 4]
 

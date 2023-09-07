@@ -1,4 +1,4 @@
-site_name: dot-map
+site_name: functional-piped
 
 theme:
   name: material
@@ -24,5 +24,5 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
 
-repo_url: https://github.com/Vopaaz/dot-map
-repo_name: Vopaaz/dot-map
+repo_url: https://github.com/Vopaaz/functional-piped
+repo_name: Vopaaz/functional-piped

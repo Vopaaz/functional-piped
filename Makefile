@@ -1,7 +1,7 @@
 .PHONY: test mandoc-serve mandoc apidoc
 
 test:
-	pytest tests/ dotmap/
+	pytest tests/ funcpipe/
 
 cov:
 	python -m http.server -d .html-coverage
@@ -16,5 +16,5 @@ mandoc: apidoc
 
 apidoc:
 	rm -rf ./docs/apidoc
-	pdoc dotmap -o ./docs/apidoc --docformat google
+	pdoc funcpipe -o ./docs/apidoc --docformat google
 	python -m http.server -d docs/apidoc

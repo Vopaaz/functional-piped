@@ -1,6 +1,8 @@
-# dot-map
+# functional-piped
 
-This library allows you to write `s(iterable).map(func)` instead of `map(func, iterable)`,
+Python has native support for some functional programming functions such as `map` and `filter`.
+This library allows you to use them in a "piped" way,
+i.e. `s(iterable).map(func)` instead of `map(func, iterable)`,
 because in any slightly more complex scenarios, the former is much more readable.
 
 For example,
@@ -25,12 +27,12 @@ list(
 
 ## Installation
 
-`pip install dot-map`
+`pip install functional-piped`
 
 ## Usage
 
 ```python
->>> from dotmap import Stream as s
+>>> from funcpipe import Stream as s
 ```
 
 Then you can use `.map`, `.filter`, `.reduce`, and `.foreach`

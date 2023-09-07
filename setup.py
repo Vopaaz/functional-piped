@@ -4,11 +4,11 @@ with open(r"README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="dot-map",
+    name="functional-piped",
     version="0.0.1",
     author="Vopaaz",
     author_email="liyifan945@gmail.com",
-    url="https://github.com/Vopaaz/dot-map",
+    url="https://github.com/Vopaaz/functional-piped",
     description="Write iterator.map(func) instead of map(func, iterator)",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = dotmap
+source = funcpipe
 data_file = ./.coverage/.coverage
 
 [report]
