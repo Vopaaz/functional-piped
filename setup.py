@@ -5,7 +5,7 @@ with open(r"README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="functional-piped",
-    version="0.0.1",
+    version="0.1.0",
     author="Vopaaz",
     author_email="liyifan945@gmail.com",
     url="https://github.com/Vopaaz/functional-piped",
@@ -18,6 +18,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "License :: OSI Approved :: MIT License",
     ],
 )
